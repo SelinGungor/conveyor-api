@@ -1,3 +1,6 @@
+# Info
+
+This project uses Scala with play framework, and MySql
 # To run project
 
 # Start db
