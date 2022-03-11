@@ -1,0 +1,13 @@
+# Routes
+
+# API controllers mapping
+GET /api/scores controllers.api.ScoreController.getAll
+GET /api/scores/:id controllers.api.ScoreController.getRecord(id: Long)
+POST /api/scores/add controllers.api.ScoreController.addRecord
+DELETE /api/scores/delete/:id controllers.api.ScoreController.delete(id: Long)
+
+# Home page
+GET     /                           controllers.HomeController.index()
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
